@@ -18,12 +18,13 @@ config = {
   "appId": "1:380736490668:web:394254281c9ea4dd602309",
 
   "measurementId": "G-ZM4HSTG39N",
-    "databaseURL":""
+    "databaseURL":"https://try-firebase-14760-default-rtdb.europe-west1.firebasedatabase.app/"
   }
 
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
+db = firebase.database()
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key'
