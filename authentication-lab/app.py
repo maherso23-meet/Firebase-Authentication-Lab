@@ -24,7 +24,7 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
-db = firebase.database()
+db = firebase.database()    
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key'
