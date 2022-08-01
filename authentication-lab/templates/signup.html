@@ -1,54 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Signup</title>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8"> </META>
+    <style></style>
 </head>
 <body>
-    <form method="post" action="/signup">
-        <!-- Heading -->
-        <h4>    
+    
+<div>
+    <form method="post" action="http:///signup" target="_blank">
+        <h1>{{error}}</h1>
+        <h4>
             Create an account
         </h4>
-
-        <!-- Subheading -->
-        <p >
+        <p>
             Please fill up your information below to sign up.
         </p>
-
-        <!-- Email -->
         <div>
             <label>Email address*</label>
             <div>
-                <input type="email"  name="email" id="emailStr" required>
+                <input type="email" name="email" id="m_emailStr">
             </div>
         </div>
-
-        <!-- Password -->
         <div>
             <label>Password*</label>
-            <div class="input-group">
-                <input type="password"  name="password" maxlength="280">
+            <div class="m_input-group">
+                <input type="password" name="password">
             </div>
         </div>
         <div>
-            <label>full_name</label>
-            <div class="input-group">
-                <input type="full_name"  name="full_name" minlength="1">
+            <label>Full name*</label>
+            <div>
+                <input type="name" name="name" id="m_name">
             </div>
         </div>
         <div>
-            <label>username</label>
-            <div class="input-group">
-                <input type="username"  name="username" minlength="1">
+            <label>Username*</label>
+            <div>
+                <input type="username" name="username" id="m_username">
             </div>
         </div>
-        <!-- Button -->
         <div>
-            <input type="submit"/>
+            <label>bio</label>
+            <div>
+                <input type="bio" name="bio" id="m_bio" maxlength="280">
+            </div>
+        </div>
+        <div>
+            <input type="submit">
         </div>
     </form>
     <br>
-    <a href="/"><button>signin</button></a>
-</body>
-</html>
+    <a href="https://www.google.com/url?q=http:///&amp;source=gmail-html&amp;ust=1659437875642000&amp;usg=AOvVaw3kyKBruz6PCZZ3uR3i93JT" target="_blank" rel="noreferrer"><button>signin</button></a>
+</div>
+</body></html> 
